@@ -1,0 +1,21 @@
+<!-- <input placeholder="Enter Username" (keyup)="showEvent($event);">
+<h3>Your name is : {{name}}</h3>
+<input placeholder="Enter Username" [(ngModel)]="name1">
+<h3>Your name is : {{name1}}</h3> -->
+<!-- <input placeholder="Enter Username" [(ngModel)]="name1" #txtUsername>
+<h3 [style.color]="name.length % 2 === 0 ? 'red' : 'black'">Your name is : {{name1}}</h3>
+<code>{{ txtUsername.value  | json }}</code> -->
+<!-- <input placeholder="Enter Username" [(ngModel)]="name1" >
+<h3 [style.color]="name1.length % 2 === 0 ? 'black' : 'red'">Your name is : {{name1}}</h3> -->
+<!-- <input placeholder="Enter Username" [(ngModel)]="name1" >
+<h3 [style.color]="isHighlight ? 'black' : 'red'"
+    [style.fontSize]="isHighlight ? '30px' : '20px'">
+  Your name is : {{name1}}
+</h3>
+<div [class]="isHighlight ? 'circle' : 'square'"></div>
+<div [class.circle]="!isHighlight" [class.square]="isHighlight"></div> -->
+<input placeholder="Enter Username" [(ngModel)]="name1" >
+<h3 [ngStyle]="name1.length % 2 === 0 ? evenStyle : oddStyle">
+  Your name is : {{name1}}
+</h3>
+<div [ngClass]="currentClass"></div>
